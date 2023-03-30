@@ -5,4 +5,14 @@
   tasks:
     - name: Perform AWS EC2 instance snapshot
       debug:
-        msg: "Perforing AWS EC2 instance snapshot"
+        msg: "Perforing AWS EC2 instance snapshot for {{ item }}"
+      loop:
+       - i-15252352
+       - i-23434343
+       - i-19834322
+       - i-34999322
+       - i-39927875
+       - i-09822112
+       - i-34238985
+       - i-93809921
+       - i-98733221                                                        
