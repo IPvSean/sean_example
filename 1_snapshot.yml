@@ -1,0 +1,8 @@
+---
+- name: Create snapshots for AWS
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Perform AWS EC2 instance snapshot
+      debug:
+        msg: "Perforing AWS EC2 instance snapshot"

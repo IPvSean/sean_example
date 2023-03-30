@@ -1,0 +1,5 @@
+---
+- name: Create snapshots for AWS
+  hosts: localhost
+  gather_facts: false
+  tasks:
