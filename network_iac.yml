@@ -4,10 +4,10 @@
   connection: local
   gather_facts: false
   tasks:
-    - name: Run the platform facts module
-      ansible.builtin.debug:
+    - name: network.base.resource_manager - Run the platform facts module
+      ansible.builtin.command: ps
 
-    - name: Run the platform facts module
+    - name: network.base.resource_manager - Resource Facts
       ansible.builtin.debug:
         msg:
           resource_module_name: "cisco.ios.ios_interfaces"
