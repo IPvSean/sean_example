@@ -1,0 +1,36 @@
+---
+- name: Infrastrucure as Code
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Run the platform facts module
+      ansible.builtin.debug:
+
+    - name: Run the platform facts module
+      ansible.builtin.debug:
+        msg:
+          resource_module_name: "cisco.ios.ios_interfaces"
+          ansible_network_os: "cisco.ios.ios"
+          ansible_connection: "network_cli"
+          failed: false
+          gathered:
+            - name: "GigabitEthernet0/0"
+              duplex: "auto"
+              speed: "auto"
+              enabled: true
+            - name: "GigabitEthernet0/1"
+              duplex: "auto"
+              speed: "auto"
+              enabled: true
+            - name: "GigabitEthernet0/2"
+              duplex: "auto"
+              speed: "auto"
+              enabled: false
+            - name: "GigabitEthernet0/3"
+              duplex: "auto"
+              speed: "auto"
+              enabled: false
+          changed: false
+          _ansible_verbose_always: true
+          _ansible_no_log: null
