@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
     - name: network.base.resource_manager - Run the platform facts module
-      ansible.builtin.shell: ps
+      ansible.builtin.shell: ls
 
     - name: network.base.resource_manager - Resource Facts
       ansible.builtin.debug:
