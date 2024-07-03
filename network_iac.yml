@@ -1,5 +1,5 @@
 ---
-- name: Infrastrucure as Code
+- name: Infrastructure as Code
   hosts: localhost
   connection: local
   gather_facts: false
